@@ -1,5 +1,6 @@
 ---
-
+const secret = import.meta.env.SECRET;
+const viteSecret = import.meta.env.VITE_SECRET;
 ---
 
 <html lang="en">
@@ -12,5 +13,7 @@
 	</head>
 	<body>
 		<h1>Astro</h1>
+		<p>The secret is: {secret}</p>
+		<p>The Vite secret is: {viteSecret}</p>
 	</body>
 </html>
